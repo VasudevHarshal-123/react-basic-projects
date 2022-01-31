@@ -20,6 +20,10 @@ export default App;
 
 //React - library or framework ? create react app ? 
 
+
+
+
+
 //Why react ? - 
 /*
 1) Easy to learn : Good amount of resources and materials. Lower learning curve.
@@ -28,8 +32,13 @@ export default App;
 4) SEO - Search engine optimisation : SEO friendly.
 5) JEST - React si easy to test.
 
+
+
+
+
+
 Disadvantages : 
-1)The high pace of development : Class based, es6, Hooks.
+1) The high pace of development : Class based, es6, Hooks.
 2) Poor documentation : 
 3) View(of MVC) : React work in view part and nothing else.
 
