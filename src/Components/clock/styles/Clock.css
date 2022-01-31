@@ -1,0 +1,13 @@
+.clock {
+    height: 100vh;
+    background-color : #282c34;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    color: #39ff14;
+    font-size: 6vw;
+    font-family:'Courier New', Courier, monospace;
+}
