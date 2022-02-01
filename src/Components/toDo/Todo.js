@@ -7,29 +7,50 @@ export class Todo extends Component {
     constructor() {
         super();
         this.state = {
-            list:[] //array of objects
+            list: [] //array of objects
         }
     }
 
-    updateList = (text) =>{
+    updateList = (text) => {
         let newObj = {
-            done:false,
-            text:text,
-            starred:false
+            done: false,
+            text: text,
+            starred: false
         }
         this.setState({
-            list: [...this.state.list, newObj]
+            list: [...this.state.list, newObj],
+            isDarkMode: false
         })
     }
 
-  render() {
-    return (
-    <div className="todo-container">
-        <TodoList list={this.state.list}/>
-        <TodoInput updateList={this.updateList} />
-    </div>
-    )
-  }
+    enableDarkMode = () =>{
+        this.setState({isDarkMode: !this.state.isDarkMode});
+    }
+
+    getDarkMode = () =>{
+        return <div className='todo-dark' onClick={this.enableDarkMode}>
+            Dark Mode
+        </div>
+    }
+
+    getChildComponents = () => {
+        return (
+            <div className='todo-child-components-wrapper'>
+                <TodoList isDarkMode={this.state.isDarkMode} list={this.state.list} />
+                {this.getDarkMode()}
+                <TodoInput updateList={this.updateList} />
+            </div>
+        )
+    }
+
+    render() {
+        return (
+            <div className="todo-container">
+                <h1>Todo App:</h1>
+                {this.getChildComponents()}
+            </div>
+        )
+    }
 }
 
 export default Todo;

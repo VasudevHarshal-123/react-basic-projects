@@ -21,18 +21,27 @@ export class TodoListCard extends Component {
   }
 
   render() {
-    let tick = "#cccccc", star = "#cccccc",strike="";
+    let tick = "#cccccc", star = "#cccccc",strike="",dark="";
     if(this.state.done){
-      tick = "#52c41a";
+      tick = "#52c41a"; //green
       strike="todolist-text-strike"
+    }
+    if(this.props.isDarkMode) {
+        dark="todo-card-text-dark "
     }
     if(this.state.starred)
       star = "#52c41a"
     return (
       <div className="todo-list-card-wrapper">
+       
         <CheckCircleTwoTone style={{ fontSize: '30px'}} onClick={this.handleClickTick} twoToneColor={tick} />
-        <p className={"todo-card-text "+ strike}>{this.state.text}</p>
+       
+        <p className={"todo-card-text "+ dark + strike}>{this.state.text}</p>
+        
+        
         <StarTwoTone style={{ fontSize: '30px'}} onClick={this.handleClickStar} twoToneColor={star} />
+      
+      
       </div>
     )
   }

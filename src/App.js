@@ -1,19 +1,22 @@
 import './App.css';
 import "./Font.css";
-// import Clock from "./Components/clock/Clock";
-// import Todo from "./Components/toDo/Todo";
+import Clock from "./Components/clock/Clock";
+import Todo from "./Components/toDo/Todo";
 import Rough from "./Components/rough/Rough";
+import Quote from "./Components/quote/Quote";
+
 
 function App() {
   return (
     <div className="App">
       {/* <div className="clock">
         <Clock />
-      </div>
-      <div className="todo-wrapper">
+      </div> */}
+      {/* <div className="todo-wrapper">
         <Todo />
       </div> */}
       <Rough />
+      <Quote />
     </div>
   );
 }
