@@ -3,16 +3,12 @@ import React, { Component } from 'react';
 export class TodoInput extends Component {
     constructor() {
         super();
-        this.state = {
-            currentText:""
-        }
+        this.state = {currentText:""}
     }
 
     handleChange = (e) => {
         e.preventDefault();
-        this.setState({
-            currentText: e.target.value
-        })
+        this.setState({currentText: e.target.value})
     }
 
     handleSubmit = (e) =>{

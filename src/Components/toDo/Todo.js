@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
+import "./styles/Todo.css";
 
 export class Todo extends Component {
     constructor() {
         super();
         this.state = {
-            list:[]
+            list:[] //array of objects
         }
     }
 
@@ -23,9 +24,9 @@ export class Todo extends Component {
 
   render() {
     return (
-    <div>
-        <TodoInput updateList={this.updateList} />
+    <div className="todo-container">
         <TodoList list={this.state.list}/>
+        <TodoInput updateList={this.updateList} />
     </div>
     )
   }
