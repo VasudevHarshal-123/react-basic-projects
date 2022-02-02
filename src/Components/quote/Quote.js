@@ -1,32 +1,52 @@
-import React, { useState, useEffect, useRef } from 'react';
-import {fetchRandomQuote} from "./QuoteClient";
+import React, { useState, useEffect, useRef } from "react";
+import { fetchRandomQuote } from "./QuoteClient";
 import "./styles/Quote.css";
 
 function Quote() {
     const [quoteText, setQuoteText] = useState("");
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
         fetchRandomQuote(setQuoteText);
-    },[]);
+    }, []);
 
-    const getDisplayQuote = () =>{
-        return(
-            <div className="quote-display-wrapper">
+
+    const getDisplayQuote = () => {
+        let darkClass = isDarkMode ? "quote-display-wrapper-dark" : "";
+        return (
+            <div className={"quote-display-wrapper " + darkClass}>
                 <h1>{quoteText}</h1>
             </div>
-        )
+        );
+    };
+
+    const refreshQuoteCTA = () => {
+        return (
+            <div className="quote-refresh" onClick={() => fetchRandomQuote(setQuoteText)}>
+                Refresh
+            </div>
+        );
+    };
+
+    const getDarkModeCTA = () => {
+        return <div onClick={()=>setIsDarkMode(!isDarkMode)} className="quote-dark-mode">
+            Glow
+        </div>
     }
 
-    const refreshQuoteCTA = () =>{
-        return <div className="quote-refresh" onClick={()=>fetchRandomQuote(setQuoteText)}>Refresh</div>
+    const getCTAs = () =>{
+        return <div className="quote-CTA-wrapper">
+            {refreshQuoteCTA()}
+            {getDarkModeCTA()}
+        </div>
     }
 
     return (
         <div className="quote-wrapper">
             {getDisplayQuote()}
-            {refreshQuoteCTA()}
+            {getCTAs()}
         </div>
-    )
+    );
 }
 
 export default Quote;
@@ -36,9 +56,8 @@ export default Quote;
 // import { useQuoteContext } from "./QuoteContext";
 
 // function Quote() {
-//     // const [quoteText, setQuoteText] = useState("");
 //     const mounted = useRef();
-//     const { 
+//     const {
 //         setLoaded,
 //         loaded,
 //         quote,
@@ -51,55 +70,22 @@ export default Quote;
 //             .then(response => {
 //                 console.log(response.data.contents);
 //                 setQuote(response.data.contents.quotes[0].quote);
-//                 // setQuoteText(response.data.contents.quotes[0].quote);
 //             })
 //             .catch((error) => {
 //                 console.log(error);
 //             });
 //             mounted.current = true;
-//         } 
+//         }
 //         else {
-//             //componentDidUpdate
+//             //componentDidUpdate logic
 //         }
 //     },[]);
 
 //     return (
 //         <div>
 //             {quote}
-//             {/* {quoteText} */}
 //         </div>
 //     )
 // }
 
 // export default Quote;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

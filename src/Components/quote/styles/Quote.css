@@ -16,13 +16,16 @@
     border: 1px solid #eee;
     border-radius: 13.7879px;
     width: 70%;
-    height: 15vh;
     margin: 3vw;
     padding: 5vw;
-    background-color: darkslategrey;
-    overflow-y: scroll;
+    background-color: #fff;
+    /* overflow-y: scroll; */
     display: flex;
     justify-content: center;
+}
+
+.quote-display-wrapper-dark {
+    background-color: #000;
 }
 
 ::-webkit-scrollbar {
@@ -30,22 +33,37 @@
 }
 
 .quote-display-wrapper > h1 {
-    margin: 0;
     font-size: 2vw;
+    font-weight: 200;
+    color: #000;
+    padding: 2vw;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
     text-align: center;
 }
 
-.quote-display-wrapper > h1 {
+.quote-display-wrapper-dark > h1 {
     border-style: solid;
-    /* border-color: darkmagenta; */
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ac589a, 0 0 20px #ac589a, 0 0 25px #ac589a,
-        0 0 30px #ac589a, 0 0 35px #ac589a;
-    /* width: fit-content; */
-    height: fit-content;
-    padding: 10px;
+    text-shadow: 2px 2px 20px #ff0000, 2px 2px 20px #ff0000, 2px 2px 20px #f40;
+    box-shadow: 0 0 0.5rem #fff, 0 0 3rem #f40;
+    padding: 20px;
     color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6,
-        0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.quote-dark-mode {
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ff0000 0%, #000 100%);
+    padding: 1vw 3vw;
+    font-family: -webkit-pictograph;
+    font-size: 1.5vw;
+    color: aliceblue;
+}
+
+.quote-CTA-wrapper {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
 }
 
 .quote-refresh {

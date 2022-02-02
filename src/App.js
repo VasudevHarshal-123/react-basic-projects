@@ -2,7 +2,7 @@ import './App.css';
 // import Clock from "./Components/clock/Clock";
 // import Todo from "./Components/toDo/Todo";
 import Quote from './Components/quote/Quote';
-// import { QuoteContextProvider } from "./Components/quote/QuoteContext";
+import { QuoteContextProvider } from "./Components/quote/QuoteContext";
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <div className="todo-wrapper">
         <Todo />
       </div> */}
-      {/* <QuoteContextProvider> */}
+      <QuoteContextProvider>
         <Quote/>
-      {/* </QuoteContextProvider> */}
+      </QuoteContextProvider>
     </div>
   );
 }
