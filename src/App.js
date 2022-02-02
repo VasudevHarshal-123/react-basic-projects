@@ -1,16 +1,18 @@
 import './App.css';
 import Clock from "./Components/clock/Clock";
 import Todo from "./Components/toDo/Todo";
+import DiceGame from "./Components/scarne/DiceGame";
 
 function App() {
   return (
     <div className="App">
-      <div className="clock">
+      {/* <div className="clock">
         <Clock />
       </div>
       <div className="todo-wrapper">
         <Todo />
-      </div>
+      </div> */}
+      <DiceGame />
     </div>
   );
 }
