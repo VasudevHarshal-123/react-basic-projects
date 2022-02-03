@@ -1,0 +1,8 @@
+.resume-wrapper {
+    display:flex;
+    border: 1px solid #ddd;
+    background-color:#fffffe;
+    justify-content: space-between;
+    padding: 2vw;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

@@ -1,0 +1,12 @@
+.resume-basic-details-wrapper, .resume-basic-details-identity-wrapper, .resume-basic-details-contact-wrapper, .resume-basic-details-about-wrapper {
+    display:flex;
+    flex-direction: column;
+}
+
+.resume-basic-details-wrapper {
+    width:30vw;
+}
+
+.resume-basic-details-connect-wrapper {
+    display:flex;
+}
