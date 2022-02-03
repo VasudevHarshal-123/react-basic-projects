@@ -1,11 +1,14 @@
 import React from 'react';
+import "./styles/DiceTotalScore.css";
 
 function DiceTotalScore(props) {
   return (
-  <div>
-      <h1>player one total : {props.playerOneTotal}</h1>
-      <h1>player two total : {props.playerTwoTotal}</h1>
-  </div>
+    <div className="dice-total-score-wrapper">
+      <div className="dice-total-score-text-wrapper">
+        <p>player one<br/>{props.playerOneTotal}</p>
+      </div>
+      <div className="dice-total-score-text-wrapper"><p>player two<br/>{props.playerTwoTotal}</p></div>
+    </div>
   )
 }
 

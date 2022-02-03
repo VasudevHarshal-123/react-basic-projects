@@ -1,4 +1,5 @@
 import './App.css';
+import "./Fonts.css";
 import Clock from "./Components/clock/Clock";
 import Todo from "./Components/toDo/Todo";
 import DiceGame from "./Components/scarne/DiceGame";

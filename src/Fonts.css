@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Arcade";
+    src: url("./Resources/Fonts/ARCADE.TTF");
+}
+
+@font-face {
+    font-family:"Arcade-Classic";
+    src: url("./Resources/Fonts/ARCADECLASSIC.TTF");
+}
+
+@font-face {
+    font-family: "1982";
+    src: url("./Resources/Fonts/BACKTO1982.TTF");
+}
+
+@font-face {
+    font-family: "ka1";
+    src: url("./Resources/Fonts/ka1.ttf");
+}
