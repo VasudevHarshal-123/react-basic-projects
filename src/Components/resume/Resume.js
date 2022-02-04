@@ -5,7 +5,7 @@ import "./styles/Resume.css";
 
 function Resume() {
   return( 
-  <div className="resume-wrapper">
+  <div id="resume-wrapper">
       <ResumeBasicDetails />
       <ResumeContent />
   </div>
