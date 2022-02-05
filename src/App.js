@@ -1,6 +1,8 @@
 import './App.css';
-// import Clock from "./Components/clock/Clock";
-// import Todo from "./Components/toDo/Todo";
+import "./Fonts.css";
+import Clock from "./Components/clock/Clock";
+import Todo from "./Components/toDo/Todo";
+import DiceGame from "./Components/scarne/DiceGame";
 import Quote from './Components/quote/Quote';
 import { QuoteContextProvider } from "./Components/quote/QuoteContext";
 
@@ -13,6 +15,7 @@ function App() {
       <div className="todo-wrapper">
         <Todo />
       </div> */}
+      <DiceGame />
       <QuoteContextProvider>
         <Quote/>
       </QuoteContextProvider>
