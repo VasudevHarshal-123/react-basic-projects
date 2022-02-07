@@ -1,40 +1,50 @@
-import React, {Component} from "react";
+import React, {useState, useEffect, useLayoutEffect} from "react";
 import "./styles/Clock.css";
 
-class Clock extends Component {
-    constructor(props) {
-        super(props);
-        this.state={
-            time: new Date().toLocaleTimeString(),
-            intervalId : null
-        };
-        // this.updateTime = this.updateTime.bind(this);
-    }
+function Clock() {
+    // constructor(props) {
+    //     super(props);
+    //     this.state={
+    //         time: ,
+    //         intervalId : null
+    //     };
+    //     // this.updateTime = this.updateTime.bind(this);
+    // }
 
-    componentDidMount() {
-        // To update the values in state
-        this.setState({
-            intervalId: setInterval(()=>this.updateTime(),1000)
-        })
-    }
+    const [time, setTime] = useState(new Date().toLocaleTimeString());
+    const [intervalId, setIntervalId] = useState(null);
 
-    componentWillUnmount() {
-        clearInterval(this.state.intervalID)
-    }
+    useEffect(() => {
+        setIntervalId(setInterval(()=>updateTime(),1000));
+    }, []);
+    
 
-    updateTime = () => {
-        this.setState({
-            time:new Date().toLocaleTimeString()
-        })
-    }
+    // componentDidMount() {
+    //     // To update the values in state
+    //     this.setState({
+    //         intervalId: setInterval(()=>this.updateTime(),1000)
+    //     })
+    // }
 
-    render() {
-        return(
+    // componentWillUnmount() {
+    //     clearInterval(this.state.intervalID)
+    // }
+
+    useLayoutEffect(() => {
+        return () => {
+            clearInterval(intervalId)
+        }
+    }, [])
+
+    const updateTime = () => {
+            setTime(new Date().toLocaleTimeString())
+    }        
+
+       return(
             <div className="time">
-                <p>{this.state.time}</p>
+                <p>{time}</p>
             </div>
         )
-    }
 }
 
 export default Clock;

@@ -4,21 +4,23 @@ import Clock from "./Components/clock/Clock";
 import Todo from "./Components/toDo/Todo";
 import DiceGame from "./Components/scarne/DiceGame";
 import Quote from './Components/quote/Quote';
+import Body from "./Components/portfolio/Body";
 import { QuoteContextProvider } from "./Components/quote/QuoteContext";
 
 function App() {
   return (
     <div className="App">
+      <Body />
       {/* <div className="clock">
         <Clock />
       </div>
       <div className="todo-wrapper">
         <Todo />
       </div> */}
-      <DiceGame />
-      <QuoteContextProvider>
+      {/* <DiceGame /> */}
+      {/* <QuoteContextProvider>
         <Quote/>
-      </QuoteContextProvider>
+      </QuoteContextProvider> */}
     </div>
   );
 }

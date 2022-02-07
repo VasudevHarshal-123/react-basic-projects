@@ -1,13 +1,13 @@
-.clock {
-    height: 100vh;
+.time {
     background-color : #282c34;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.time {
+.time > p {
     color: #39ff14;
+    margin: 2vw;
     font-size: 6vw;
     font-family:'Courier New', Courier, monospace;
 }

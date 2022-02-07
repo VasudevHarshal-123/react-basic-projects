@@ -1,0 +1,30 @@
+.portfolio-achivement-card-wrapper {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 1vw;
+    width: 20vw !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2vw;
+    background-color: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-achivement-card-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-achivement-card-wrapper > img {
+    width: 20vw;
+    border: 1px solid #ddd;
+}
+
+.portfolio-achivement-card-wrapper > h3 , .portfolio-achivement-card-wrapper > p {
+    font-family: "Poppins-Medium";
+    color: #222;
+}
+
+.portfolio-achivement-wrapper .slick-track {
+    padding: 2vw 0 2vw 4vw;
+}

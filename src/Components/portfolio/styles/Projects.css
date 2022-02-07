@@ -1,0 +1,30 @@
+.protfolio-projects-together-wrapper, .protfolio-projects-clock-description-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.protfolio-projects-clock-description-wrapper {
+    width: 40vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.protfolio-projects-dicegame-wrapper, .protfolio-projects-todo-wrapper, .protfolio-projects-quote-wrapper, .protfolio-projects-clock-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.protfolio-projects-clock-description-wrapper > h2 {
+    font-family: "Poppins-SemiBold";
+    color: darkslategray;
+}
+
+.protfolio-projects-clock-description-wrapper > p, .protfolio-projects-clock-description-wrapper li {
+    font-family: "Poppins-Medium";
+    color: darkslategray;
+}
+
+.protfolio-projects-clock-description-wrapper li, .protfolio-projects-clock-description-wrapper > p {
+    text-align: left;
+}

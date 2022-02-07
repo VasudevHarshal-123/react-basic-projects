@@ -17,3 +17,13 @@
     font-family: "ka1";
     src: url("./Resources/Fonts/ka1.ttf");
 }
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("./Resources/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("./Resources/Fonts/Poppins-Medium.ttf");
+}

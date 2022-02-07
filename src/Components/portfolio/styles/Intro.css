@@ -1,0 +1,89 @@
+.portfolio-intro-wrapper, .portfolio-intro-card-social-wrapper, .portfolio-intro-body-wrapper {
+    display: flex;
+}
+
+.portfolio-intro-wrapper {
+    flex-direction: column;
+}
+
+.portfolio-intro-body-wrapper {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portfolio-intro-card-wrapper {
+    width: 40vw;
+    overflow: hidden;
+    margin-right: 5vw;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.portfolio-intro-card-bg-image > img {
+    width: 40vw;
+}
+
+.portfolio-intro-card-wrapper, .portfolio-intro-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.portfolio-intro-card-content-wrapper {
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.portfolio-intro-card-content-wrapper > img {
+    width: 8vw;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px solid #fff;
+    position: relative;
+    top: -5vw;
+}
+
+.portfolio-intro-card-content-wrapper > h2 {
+    font-family: "Poppins-SemiBold";
+    color: darkslategray;
+    margin-top: -3vw;
+    margin-bottom: 0;
+}
+
+.portfolio-intro-card-content-wrapper > p {
+    font-family: "Poppins-Medium";
+    color: darkslategray;
+}
+
+.portfolio-intro-card-content-wrapper > div {
+    background-color:rebeccapurple;
+    padding: 1vw 2vw;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Poppins-Medium";
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+
+.portfolio-intro-card-social-wrapper {
+    width:20%;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.portfolio-intro-card-social-wrapper span {
+    cursor: pointer;
+}
+
+.connect-whatsapp {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    cursor: pointer;
+    background-color: #25d366;
+    padding: 1vw;
+    border-radius: 50%;
+    z-index: 100;
+}
