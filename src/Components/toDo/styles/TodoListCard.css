@@ -1,0 +1,30 @@
+.todo-list-card-wrapper {
+    border: 1px solid #F3F3F3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1vw;
+    width:90%;
+    margin: 1vw auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todo-card-text {
+    font-family: "Roboto-Regular";
+    color: #000;
+    font-size: 2vw;
+    width: 70%;
+}
+
+.todo-card-text-dark {
+    color: aliceblue;
+}
+
+.todolist-text-strike {
+    text-decoration: line-through;
+    color: #aaaaaa;
+}
+
+.todo-list-tick {
+    width: 3vw;
+}

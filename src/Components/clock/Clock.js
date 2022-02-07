@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./styles/Clock.css";
 
 class Clock extends Component {
@@ -6,25 +6,20 @@ class Clock extends Component {
         super(props);
         this.state={
             time: new Date().toLocaleTimeString(),
-            intervalId : null
-        };
-        // this.updateTime = this.updateTime.bind(this);
+            intervalId: null
+        }
+        this.updateTime = this.updateTime.bind(this);
     }
 
-    componentDidMount() {
-        // To update the values in state
+    componentDidMount(){
         this.setState({
-            intervalId: setInterval(()=>this.updateTime(),1000)
-        })
+            intervalId : setInterval(()=> this.updateTime(),1000)
+        }) 
     }
 
-    componentWillUnmount() {
-        clearInterval(this.state.intervalID)
-    }
-
-    updateTime = () => {
+    updateTime() {
         this.setState({
-            time:new Date().toLocaleTimeString()
+            time: new Date().toLocaleTimeString()
         })
     }
 
