@@ -1,0 +1,27 @@
+.dice-total-score-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding:2vw;
+}
+
+.dice-total-score-text-wrapper {
+    background-color: azure;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.3vw;
+    width:25%;
+    margin-left:1vw;
+    padding: 0.5vw 0;
+    position: relative;
+    top: 1vw;
+}
+
+.dice-total-score-text-wrapper p {
+    font-family: "ka1";
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.dice-total-score-text-wrapper:first-child {
+    margin-left:9vw;
+}

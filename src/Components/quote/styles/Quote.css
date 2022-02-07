@@ -1,0 +1,77 @@
+.quote-wrapper {
+    box-shadow: 0 44px 57.9091px rgb(70 74 140 / 12%);
+    border: 1px solid #eee;
+    border-radius: 13.7879px;
+    width: 80%;
+    margin: 4vw auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 0;
+}
+
+.quote-display-wrapper {
+    box-shadow: 0 44px 57.9091px rgb(70 74 140 / 12%);
+    border: 1px solid #eee;
+    border-radius: 13.7879px;
+    width: 70%;
+    margin: 3vw;
+    padding: 5vw;
+    background-color: #fff;
+    /* overflow-y: scroll; */
+    display: flex;
+    justify-content: center;
+}
+
+.quote-display-wrapper-dark {
+    background-color: #000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.quote-display-wrapper > h1 {
+    font-size: 2vw;
+    font-weight: 200;
+    color: #000;
+    padding: 2vw;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.quote-display-wrapper-dark > h1 {
+    border-style: solid;
+    text-shadow: 2px 2px 20px #ff0000, 2px 2px 20px #ff0000, 2px 2px 20px #f40;
+    box-shadow: 0 0 0.5rem #fff, 0 0 3rem #f40;
+    padding: 20px;
+    color: white;
+}
+
+.quote-dark-mode {
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ff0000 0%, #000 100%);
+    padding: 1vw 3vw;
+    font-family: -webkit-pictograph;
+    font-size: 1.5vw;
+    color: aliceblue;
+}
+
+.quote-CTA-wrapper {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+}
+
+.quote-refresh {
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    padding: 1vw 3vw;
+    font-family: -webkit-pictograph;
+    font-size: 1.5vw;
+    color: aliceblue;
+}
