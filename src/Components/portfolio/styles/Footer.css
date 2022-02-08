@@ -1,0 +1,63 @@
+.portfolio-footer-wrapper {
+    background: linear-gradient(to bottom, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+}
+
+.footer-resume-CTA, .portfolio-footer-scroll-top {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.portfolio-footer-content-wrapper {
+    display: flex;
+}
+
+.portfolio-footer-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.portfolio-footer-scroll-top {
+    background-color: maroon;
+    color: #fff;
+    padding: 1vw 2vw;
+    border-radius: 4px;
+}
+
+.portfolio-footer-Navigation-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-footer-Navigation-links-wrapper {
+    width: 95% !important;
+    margin-top: 5vw;
+}
+
+
+/* Morning:
+https://zoom.us/rec/play/JFRTDEGd_pHGOKARvTDFN-gqqMoXTN9CVHNxZbasojZLmkMjjMzyIyznjNW2iMtJHXMBzgCBZL8gKvcv.MWCuKvAPFWJLnLHc?autoplay=true&startTime=1643347914000
+
+https://zoom.us/rec/play/d16unw1nGR6mYUEUhhzhrvFJjCsLBsSm7256VuGPuEslHMa1ldUGScvKu9-dyCAxe_TmJi2MItvCHUbx.-jN4CwUr8Ykod9B6?autoplay=true&startTime=1643607131000
+
+https://zoom.us/rec/play/asvDtOs6o-3ALMgLZdCem-LU4lRlUP1Sv4LWznfd0tEdxa_p64WMC5wPV-rtjhOTD9544jIGFFQ9J3lz.GBZLjJlzrIVXJ_5d?autoplay=true&startTime=1643693529000
+
+https://zoom.us/rec/play/GZHqkouXIfgAJxIl5Z0b-GWkES5ZHG5C-EGfRxWsyTXZ8VrpJQmxFIgcH4DXGzkkbi7tnrPNHACBvSlC.XOyYSPbWJivUxqi-?autoplay=true&startTime=1643261459000
+
+https://zoom.us/rec/play/EUp8iwOm5LiU8eciWDP4lz3bnsQjf4IwmAn1OgU9IiVjwydjuFl1P06RU007qS66V7EZb0v7K1WDHijy.uM-mcTG2OFhNBzYz?autoplay=true&startTime=1643347914000
+
+afternoon:
+
+https://zoom.us/rec/play/5VwjkI52RDIOHI-DWRlYwkccqudNJTHL2Gx_FBWD5b6ULREy6x14-vLYMDA5JhhFqcc-Mb5V4pbIz8GV.zjdBddR0LwtB9dJJ?autoplay=true&startTime=1642498187000
+
+https://zoom.us/rec/play/Gr47oSSt2ZNskCkLFw4Y_jIq3uE8zTpOWeyy_jrB-DLb1_Z0jEFVyEOF_A33kajBaIEx0psAunW5A-k.WEs9NBPyV4GkYITR?autoplay=true&startTime=1643275800000
+
+https://zoom.us/rec/play/vHQxVNx01YdqD00ef6BF0UoPnfeugJhNzpuzYSxJb5x0YjZVW1OModeujCD6pEAGVRdxSrV1RGio4kvt.NDLqVHyoJPWHCzPY?autoplay=true&startTime=1643362263000
+
+https://zoom.us/rec/play/U7lNtZfRR5uTTGFFjIrWJ1cVJxxRPRGZUAvf6vKAEnnNMfIPuVR3S4dQiBzPe5gyPFsmxuuse4lPTHgd.AkqoW0rVo52V_iY_?autoplay=true&startTime=1643621436000
+
+https://zoom.us/rec/play/yLkIowtManN0QYJQrpC0ngIaV4Ss-JzcrrVECgAk1qTy6YtVkEqwduCNpMaij9oJHAQq2_Od71p7TmI5.t0XhI7qsH1ieosI0?autoplay=true&startTime=1643707856000 */

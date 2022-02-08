@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import DiceCurrent from "./DiceCurrent";
 import DiceTotalScore from "./DiceTotalScore";
 import "./styles/DiceGame.css";
+import { withRouter } from "react-router-dom";
 
 function DiceGame() {
     const [playerOneTotal, setPlayerOneTotal] = useState(0);
@@ -19,4 +20,4 @@ function DiceGame() {
   )
 }
 
-export default DiceGame;
+export default withRouter(DiceGame);

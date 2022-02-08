@@ -25,3 +25,17 @@
 .dice-total-score-text-wrapper:first-child {
     margin-left:9vw;
 }
+
+@media(max-width:660px) {
+    .dice-total-score-text-wrapper p {
+        font-size: 3vw;
+    }
+
+    .dice-total-score-text-wrapper {
+        top: -2vw;
+    }
+
+    .dice-total-score-text-wrapper:first-child {
+        margin-left: 15vw;
+    }
+}

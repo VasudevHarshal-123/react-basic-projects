@@ -3,3 +3,10 @@
     flex-direction: column;
     padding: 2vw 4vw;
 }
+
+@medi(max-width:660px) {
+    .portfolio-body-wrapper {
+        padding-left: 6vw;
+        padding-bottom: 20vh;
+    }
+}

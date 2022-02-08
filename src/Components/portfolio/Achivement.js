@@ -14,10 +14,28 @@ const settings = {
     infinite: true,
     autoplay: true,
     dots: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     centerPadding: "60px",
     slidesToShow: 3,
-    speed: 500
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 660,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
+          }
+        },
+      ]
 }
 
 function Achivement() {
@@ -33,7 +51,7 @@ function Achivement() {
     }
 
     return (
-  <div className="portfolio-achivement-wrapper">
+  <div id="portfolio-achivement-wrapper">
       <h1>Certifications & Achivements</h1>
       <Slider {...settings}>
             {getCarousalCard(c1,"some random tittle","Descriptiion of this achivement on what you did")}

@@ -1,0 +1,41 @@
+.portfolio-header-wrapper, .portfolio-header-name-wrapper, .portfolio-header-nav-wrapper  {
+    display: flex;
+}
+
+.portfolio-header-wrapper {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #FFF;
+    padding: 1vw 0;
+    z-index: 1000;
+    box-shadow: 0 1px 10px #e5e6e7;
+    align-items: center;
+}
+
+.portfolio-header-nav-wrapper {
+    width: 35%;
+    justify-content: space-between;
+}
+
+.portfolio-header-name-wrapper {
+    align-items: center;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.portfolio-header-name-wrapper > img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-header-nav-wrapper > a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins-Medium";
+    margin: 0;
+}

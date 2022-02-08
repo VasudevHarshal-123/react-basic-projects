@@ -25,6 +25,16 @@
     color: #222;
 }
 
-.portfolio-achivement-wrapper .slick-track {
+#portfolio-achivement-wrapper .slick-track {
     padding: 2vw 0 2vw 4vw;
+}
+
+@media(max-width:600px) {
+    .portfolio-achivement-card-wrapper {
+        width: 82vw !important;
+    }
+
+    .portfolio-achivement-card-wrapper > img {
+        width: 90%;
+    }
 }

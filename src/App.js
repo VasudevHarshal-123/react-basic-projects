@@ -1,31 +1,28 @@
+import React from "react";
 import './App.css';
 import "./Fonts.css";
-import Clock from "./Components/clock/Clock";
-import Todo from "./Components/toDo/Todo";
+import PortfolioWrapper from "./Components/portfolio/PortfolioWrapper";
+import { Switch, Route, BrowserRouter, withRouter } from "react-router-dom";
 import DiceGame from "./Components/scarne/DiceGame";
-import Quote from './Components/quote/Quote';
-import Body from "./Components/portfolio/Body";
-import { QuoteContextProvider } from "./Components/quote/QuoteContext";
 
 function App() {
   return (
     <div className="App">
-      <Body />
-      {/* <div className="clock">
-        <Clock />
-      </div>
-      <div className="todo-wrapper">
-        <Todo />
-      </div> */}
-      {/* <DiceGame /> */}
-      {/* <QuoteContextProvider>
-        <Quote/>
-      </QuoteContextProvider> */}
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <PortfolioWrapper />
+          </Route>
+          <Route exact path="/dice">
+            <DiceGame />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
 
 
 //React - library or framework ? create react app ? 
@@ -45,5 +42,13 @@ Disadvantages :
 
 npm install
 npm start
+
+<BrowserRouter>
+				<Switch>
+					<Route path='/book-interaction'>
+						<BookSession />
+					</Route>
+
+        
 
 */

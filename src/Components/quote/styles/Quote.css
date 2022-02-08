@@ -3,20 +3,20 @@
     border: 1px solid #eee;
     border-radius: 13.7879px;
     width: 80%;
-    margin: 4vw auto;
+    margin: 2vw auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5vw 0;
+    padding: 2vw 0;
 }
 
 .quote-display-wrapper {
     box-shadow: 0 44px 57.9091px rgb(70 74 140 / 12%);
     border: 1px solid #eee;
     border-radius: 13.7879px;
-    width: 70%;
-    margin: 3vw;
+    width: 75%;
+    margin: 1vw;
     padding: 5vw;
     background-color: #fff;
     /* overflow-y: scroll; */
@@ -74,4 +74,21 @@
     font-family: -webkit-pictograph;
     font-size: 1.5vw;
     color: aliceblue;
+}
+
+@media(max-width:660px) {
+    .quote-wrapper {
+        width: 100%;
+        padding: 3vw 0;
+        margin:0;
+    }
+
+    .quote-display-wrapper > h1, .quote-refresh, .quote-dark-mode {
+        font-size: 3.5vw;
+    }
+
+    .quote-CTA-wrapper {
+        width: 50%;
+        margin-top:3vw;
+    }
 }

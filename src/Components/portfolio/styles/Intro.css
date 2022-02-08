@@ -57,7 +57,7 @@
     color: darkslategray;
 }
 
-.portfolio-intro-card-content-wrapper > div {
+.resume-CTA {
     background-color:rebeccapurple;
     padding: 1vw 2vw;
     border-radius: 4px;
@@ -86,4 +86,33 @@
     padding: 1vw;
     border-radius: 50%;
     z-index: 100;
+}
+
+@media(max-width:660px) {
+    .portfolio-intro-body-wrapper {
+        flex-direction: column;
+    }
+
+    .portfolio-intro-card-wrapper {
+        margin-right: 0;
+        width:95vw;
+    }
+
+    .portfolio-intro-card-bg-image > img {
+        width:100%;
+    }
+
+    .portfolio-intro-card-content-wrapper > img {
+        width:20%;
+        top:-12vw;
+    }
+
+    .portfolio-intro-card-content-wrapper > h2 {
+        margin-top: -10vw;
+    }
+
+    .resume-CTA {
+        padding: 1.5vw 7vw;
+    }
+
 }

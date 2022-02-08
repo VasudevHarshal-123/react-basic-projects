@@ -1,0 +1,44 @@
+#portfolio-about-wrapper {
+    padding: 3vw;
+}
+
+#portfolio-about-wrapper img {
+    width:30vw;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.portfolio-about-body-wrapper {
+    display: flex;
+    margin-top: 5vw;
+}
+
+.portfolio-about-content-wrapper {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.portfolio-about-content-wrapper > p {
+    width: 70%;
+    color:darkslategrey;
+    font-family: "Poppins-Medium";
+}
+
+.portfolio-about-content-wrapper > h2 {
+    color:darkslategrey;
+    font-family: "Poppins-SemiBold";
+}
+
+@media(max-width:660px) {
+    .portfolio-about-body-wrapper {
+        flex-direction: column;
+    }
+
+    .portfolio-about-content-wrapper > p {
+        width: 100%;
+    }
+
+    #portfolio-about-wrapper img {
+        width: 87vw;
+    }
+}
