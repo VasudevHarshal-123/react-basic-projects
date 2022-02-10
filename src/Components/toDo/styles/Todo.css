@@ -1,0 +1,40 @@
+
+.todo-container {
+    background: url("https://www.blogtechtips.com/wp-content/uploads/2015/07/Samsung-Galaxy-Tablet@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 4vw;
+    padding-bottom: 6vw;
+}
+
+.todo-container > h1 {
+    color: beige;
+}
+
+.todo-child-components-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-dark {
+    cursor: pointer;
+    background-color: #313552;
+    color: aliceblue;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(max-width:660px) {
+    .todo-container {
+        margin-left:5vw;
+        padding-bottom: 15vw;
+    }  
+    
+    .todo-dark {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+}

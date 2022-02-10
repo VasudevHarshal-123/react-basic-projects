@@ -1,0 +1,38 @@
+.portfolio-hamburger-wrapper {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 75vh;
+    width: 75vw;
+    padding: 5vw;
+    position:fixed; 
+    left:0;
+    top:0;
+}
+
+.portfolio-hamburger-header-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.portfolio-hamburger-header-wrapper .portfolio-header-name-wrapper {
+    width:80%
+}
+
+.portfolio-hamburger-header-wrapper .portfolio-header-name-wrapper > h1 {
+    font-size:5vw;
+}
+
+.portfolio-hamburger-body-wrapper {
+    display:flex;
+    margin-top: 8vw;
+    flex-direction: column;
+}
+
+.portfolio-hamburger-body-wrapper > a {
+    font-size: 4vw;
+    font-family: "Poppins-Medium";
+    margin-bottom: 4vw;
+}

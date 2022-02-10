@@ -1,5 +1,14 @@
 .portfolio-body-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
+    padding: 2vw 0vw;
+    margin-top: 5vw;
+}
+
+@media(max-width:660px) {
+    .portfolio-body-wrapper {
+        padding-left: 0vw;
+        padding-bottom: 3vh;
+        margin-top:16vw;
+    }
 }

@@ -56,3 +56,23 @@
   .dice-current-btn.dice-current-primary:focus, .dice-current-btn.dice-current-primary:hover {
     background: #A81000;
   }
+
+  @media(max-width:660px) {
+    .dice-current-btn {
+      font-size:3.5vw;
+    }
+
+    .dice-current-wrapper {
+      padding-bottom : 10vw;
+      padding-top: 3vw;
+    }
+
+    .dice-current-CTAs-wrapper {
+      margin: 3vw 0;
+    }
+
+    .dice-current-score {
+      margin-bottom: 10vw;
+      font-size: 3vw;
+    }
+  }

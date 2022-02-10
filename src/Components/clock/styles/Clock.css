@@ -11,3 +11,9 @@
     font-size: 6vw;
     font-family:'Courier New', Courier, monospace;
 }
+
+@media(max-width:660px){
+    .time > p {
+        font-size: 12vw;
+    }
+}

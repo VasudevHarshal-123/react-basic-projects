@@ -45,10 +45,20 @@
     top: -5vw;
 }
 
+.portfolio-intro-wrapper > h1, #portfolio-about-wrapper > h1, #portfolio-achivement-wrapper > h1, #protfolio-projects-wrapper > h1, #portfolio-connect-with-me > h1 {
+    font-family: "Poppins-SemiBold";
+    color: darkslategray;
+    font-size: 2.5vw;
+}
+
+.portfolio-intro-wrapper, #portfolio-about-wrapper , #portfolio-achivement-wrapper , #protfolio-projects-wrapper , #portfolio-connect-with-me  {
+    padding : 0 4vw;
+}
+
 .portfolio-intro-card-content-wrapper > h2 {
     font-family: "Poppins-SemiBold";
     color: darkslategray;
-    margin-top: -3vw;
+    margin-top: -5vw;
     margin-bottom: 0;
 }
 
@@ -57,7 +67,7 @@
     color: darkslategray;
 }
 
-.portfolio-intro-card-content-wrapper > div {
+.resume-CTA {
     background-color:rebeccapurple;
     padding: 1vw 2vw;
     border-radius: 4px;
@@ -70,7 +80,7 @@
 .portfolio-intro-card-social-wrapper {
     width:20%;
     justify-content: space-between;
-    margin-bottom: 2vw;
+    margin-bottom: 0vw;
 }
 
 .portfolio-intro-card-social-wrapper span {
@@ -86,4 +96,37 @@
     padding: 1vw;
     border-radius: 50%;
     z-index: 100;
+}
+
+@media(max-width:660px) {
+    .portfolio-intro-body-wrapper {
+        flex-direction: column;
+    }
+
+    .portfolio-intro-card-wrapper {
+        margin-right: 0;
+        width:95vw;
+    }
+
+    .portfolio-intro-card-bg-image > img {
+        width:100%;
+    }
+
+    .portfolio-intro-card-content-wrapper > img {
+        width:20%;
+        top:-12vw;
+    }
+
+    .portfolio-intro-card-content-wrapper > h2 {
+        margin-top: -10vw;
+    }
+
+    .resume-CTA {
+        width:25%;
+    }
+
+    .portfolio-intro-wrapper > h1, #portfolio-about-wrapper > h1, #portfolio-achivement-wrapper > h1, #protfolio-projects-wrapper > h1, #portfolio-connect-with-me > h1 {
+        font-size: 6vw;
+    }
+
 }

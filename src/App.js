@@ -1,26 +1,23 @@
+import React from "react";
 import './App.css';
 import "./Fonts.css";
-import Clock from "./Components/clock/Clock";
-import Todo from "./Components/toDo/Todo";
-import DiceGame from "./Components/scarne/DiceGame";
-import Quote from './Components/quote/Quote';
-import Body from "./Components/portfolio/Body";
-import { QuoteContextProvider } from "./Components/quote/QuoteContext";
+import ResumeContainer from "./Components/resume/ResumeContainer.js";
+import PortfolioWrapper from "./Components/portfolio/PortfolioWrapper";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Body />
-      {/* <div className="clock">
-        <Clock />
-      </div>
-      <div className="todo-wrapper">
-        <Todo />
-      </div> */}
-      {/* <DiceGame /> */}
-      {/* <QuoteContextProvider>
-        <Quote/>
-      </QuoteContextProvider> */}
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<PortfolioWrapper />}/>
+        <Route path="/resume" element={<ResumeContainer />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
@@ -29,6 +26,16 @@ export default App;
 
 
 //React - library or framework ? create react app ? 
+
+// import { createBrowserHistory } from 'history';
+// import React from 'react';
+// const history = createBrowserHistory();
+
+
+// export default function MyApp() {
+//     return (
+//         <Router history={history}></Router>
+//     );
 
 //Why react ? - 
 /*
@@ -45,5 +52,13 @@ Disadvantages :
 
 npm install
 npm start
+
+<BrowserRouter>
+				<Switch>
+					<Route path='/book-interaction'>
+						<BookSession />
+					</Route>
+
+        
 
 */

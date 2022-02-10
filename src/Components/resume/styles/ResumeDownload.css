@@ -1,0 +1,33 @@
+.resume-download-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.resume-go-back {
+    margin: 0%;
+    font-family: "Poppins-Medium";
+    margin-left: 0.5vw;
+}
+
+.resume-download-wrapper > h1 {
+    font-family: "Poppins-SemiBold";
+}
+
+@media(max-width:660px) {
+    .resume-download-wrapper > p {
+        font-size: 3.5vw;
+        line-height: 1;
+    }
+}
+
+@media print {
+    .resume-download-wrapper {
+        display: none;
+        margin: 0%;
+    }
+}
+
+@page { 
+    size:110vh;  
+    margin: 0mm;
+ }

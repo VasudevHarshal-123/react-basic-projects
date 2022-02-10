@@ -11,6 +11,10 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#portfolio-achivement-wrapper{
+    background-color: #ddd;
+}
+
 .portfolio-achivement-card-wrapper:hover {
     transform: scale(1.1);
 }
@@ -25,6 +29,21 @@
     color: #222;
 }
 
-.portfolio-achivement-wrapper .slick-track {
-    padding: 2vw 0 2vw 4vw;
+#portfolio-achivement-wrapper .slick-track {
+    padding: 2vw 0 2vw 5vw;
+    height: 38vh !important;
+}
+
+@media(max-width:600px) {
+    .portfolio-achivement-card-wrapper {
+        width: 82vw !important;
+    }
+
+    .portfolio-achivement-card-wrapper > img {
+        width: 90%;
+    }
+
+    #portfolio-achivement-wrapper .slick-track {
+        height: 23vh !important;
+    }
 }

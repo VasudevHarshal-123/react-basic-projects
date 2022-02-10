@@ -14,9 +14,12 @@
     font-size: 1.5vw;
 }
 
-/* 
-Arcade
-Arcade-Classic
-1982
-ka1
-*/
+@media(max-width:660px) {
+    .dice-game-wrapper {
+        width: 92vw;
+    }
+
+    .dice-game-wrapper > h1 {
+    font-size:3.5vw;
+    }
+}

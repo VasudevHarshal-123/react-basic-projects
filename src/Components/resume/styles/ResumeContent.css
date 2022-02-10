@@ -1,0 +1,125 @@
+.resume-content-wrapper,
+.resume-content-user-education-wrapper,
+.resume-content-experience-wrapper,
+.resume-content-user-experience-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-content-wrapper {
+    width: 60vw;
+}
+
+.resume-content-education-wrapper,
+.resume-content-experience-wrapper,
+.resume-content-projects-wrapper,
+.resume-content-achive-cert-wrapper,
+.resume-content-interest-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.resume-content-degree-year-wrapper,
+.resume-content-intitution-marks-wrapper,
+.resume-content-company-year-wrapper,
+.resume-content-user-project-name-wrapper {
+    display: flex;
+}
+
+.resume-content-degree-year-wrapper > h4,
+.resume-content-degree-year-wrapper > p,
+.resume-content-intitution-marks-wrapper > h5,
+.resume-content-intitution-marks-wrapper > p,
+.resume-content-company-year-wrapper > h4,
+.resume-content-company-year-wrapper > p {
+    margin: 0;
+}
+
+.resume-content-degree-year-wrapper > h4,
+.resume-content-degree-year-wrapper > p {
+    font-size: 1.4vw;
+}
+
+.resume-content-education-wrapper h3,
+.resume-content-intitution-marks-wrapper > h5,
+.resume-content-experience-wrapper h3,
+.resume-content-projects-wrapper h3,
+.resume-content-achive-cert-wrapper h3,
+.resume-content-interest-wrapper h3,
+.resume-content-interest-wrapper h4 {
+    margin: 0;
+    color: #343a40;
+    font-family: "Poppins-SemiBold";
+}
+
+.resume-content-education-wrapper h3,
+.resume-content-experience-wrapper h3,
+.resume-content-projects-wrapper h3,
+.resume-content-achive-cert-wrapper h3,
+.resume-content-achive-cert-wrapper h3,
+.resume-content-interest-wrapper h3 {
+    border-bottom: 1px dashed #aaa;
+    margin-bottom: 1vw;
+}
+
+.resume-content-user-education-wrapper {
+    margin-bottom: 1vw;
+}
+
+.resume-content-degree-year-wrapper,
+.resume-content-intitution-marks-wrapper,
+.resume-content-company-year-wrapper,
+.resume-content-user-project-name-wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-content-degree-year-wrapper > p,
+.resume-content-intitution-marks-wrapper > p,
+.resume-content-company-year-wrapper > p,
+.resume-content-user-project-name-wrapper > p {
+    color: #6b6c6d;
+    font-family: "Poppins-Medium";
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+.resume-content-company-year-wrapper > h4,
+.resume-content-user-project-name-wrapper > h4 {
+    font-family: "Poppins-Medium";
+    color: #343a40;
+    margin: 0;
+}
+
+.resume-content-user-experience-bullet li,
+.resume-content-user-project-work-wrapper li,
+.resume-content-achive-cert-wrapper li {
+    font-family: "Poppins-Regular";
+    color: #263238;
+    text-align: left;
+    font-size: 1.3vw;
+}
+
+@media (max-width: 660px) {
+    .resume-content-wrapper {
+        width: 100%;
+    }
+
+    .resume-content-degree-year-wrapper > h4,
+    .resume-content-degree-year-wrapper > p {
+        font-size: 3.4vw;
+    }
+
+    .resume-content-degree-year-wrapper > p,
+    .resume-content-intitution-marks-wrapper > p,
+    .resume-content-company-year-wrapper > p,
+    .resume-content-user-project-name-wrapper > p,
+    .resume-content-user-experience-bullet li,
+    .resume-content-user-project-work-wrapper li,
+    .resume-content-achive-cert-wrapper li {
+        font-size: 3vw;
+    }
+}

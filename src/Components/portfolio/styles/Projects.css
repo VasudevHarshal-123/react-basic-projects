@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+#protfolio-projects-wrapper {
+    background-color: #ddd;
+}
+
 .protfolio-projects-clock-description-wrapper {
     width: 40vw;
     margin-right: 2vw;
@@ -27,4 +31,15 @@
 
 .protfolio-projects-clock-description-wrapper li, .protfolio-projects-clock-description-wrapper > p {
     text-align: left;
+}
+
+@media(max-width:660px) {
+    .protfolio-projects-dicegame-wrapper, .protfolio-projects-todo-wrapper, .protfolio-projects-quote-wrapper, .protfolio-projects-clock-wrapper {
+        flex-direction: column;
+    }
+
+    .protfolio-projects-clock-description-wrapper {
+        width:90vw;
+        margin:0;
+    }
 }

@@ -1,0 +1,107 @@
+.resume-basic-details-wrapper, .resume-basic-details-identity-wrapper, .resume-basic-details-contact-wrapper, .resume-basic-details-about-wrapper, .resume-basic-details-skills-wrapper, .resume-basic-details-skills-start-wrapper {
+    display:flex;
+    flex-direction: column;
+}
+
+.resume-basic-details-skills-start-wrapper {
+    width: 70%;
+}
+
+.resume-basic-details-skills-star {
+    align-self: flex-end;
+}
+
+.resume-basic-details-skills-wrapper section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-basic-details-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding:1vw;
+}
+
+.resume-basic-details-identity-wrapper {
+    align-items: center;
+}
+
+.resume-basic-details-identity-wrapper > h2 {
+    font-family: "Poppins-SemiBold";
+    color: #263238;
+
+}
+
+.resume-basic-details-wrapper {
+    width:25vw;
+}
+
+.resume-basic-details-connect-wrapper {
+    display:flex;
+    margin-bottom: 1vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+.resume-basic-details-identity-wrapper > img {
+    border-radius: 50%;
+    width:13vw;
+}
+
+.resume-basic-details-about-wrapper > h3, .resume-basic-details-about-wrapper > p, .resume-basic-details-contact-wrapper > h3, .resume-basic-details-connect-wrapper > p, .resume-basic-details-skills-wrapper > h3 {
+    text-align: left;
+    margin:0;
+}
+
+.resume-basic-details-about-wrapper {
+    margin-bottom: 1.5vw;
+}
+
+.resume-basic-details-skills-wrapper {
+    margin-top: 2vw;
+}
+
+.resume-basic-details-about-wrapper > h3, .resume-basic-details-contact-wrapper > h3, .resume-basic-details-skills-wrapper h3 {
+    font-family: "Poppins-Medium";
+    color: #343A40;
+    margin-bottom: 1.5vw;
+}
+
+.resume-basic-details-about-wrapper > p, .resume-basic-details-connect-wrapper > p, .resume-basic-details-skills-wrapper h4{
+     color:#343A40;
+     font-family: "Poppins-Regular";
+ }
+
+ .resume-basic-details-connect-wrapper > p {
+     margin-left: 0.75vw;
+ }
+
+ @media(max-width:660px) {
+    .resume-basic-details-identity-wrapper > img {
+        width:9vw;
+    }
+
+    .resume-basic-details-identity-wrapper > h2 {
+        font-size: 3.5vw;
+    }
+
+    .resume-basic-details-about-wrapper > h3, .resume-basic-details-contact-wrapper > h3, .resume-basic-details-skills-wrapper h3 {
+        font-size: 3.5vw;
+    }
+
+    .resume-basic-details-wrapper {
+        width:100%;
+        margin-bottom: 2vw;
+    }
+
+    .resume-basic-details-connect-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .resume-basic-details-connect-wrapper {
+        margin-left: 4vw;
+    }
+
+ }
